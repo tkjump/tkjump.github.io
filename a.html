@@ -23,8 +23,11 @@
 
 	var jump = ""
 
-	
+	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+    		window.location.href = u;
+	} else {
+	  	window.location.href = "https://www.youtube.com/watch?v=41qC3w3UUkU";
+	}
 
-	window.location.href = u
 
 </script>>
