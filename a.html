@@ -22,7 +22,7 @@
 	var u = GetUrlParam("u");
 
 	if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-		console.log(u);
+		console.log(u);return;
     	    window.location.href = u;
 	} else {
 	    window.location.href = "https://en.wikipedia.org/wiki/TikTok";
