@@ -11,10 +11,15 @@
         return false;
     }
     
-    
-    window.location.href = decodeURIComponent( getQueryVariable('url') );
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        
+        window.location.href = decodeURIComponent( getQueryVariable('url') );
 
-
+    } else {
+        
+        window.location.href = "https://tiktok.com";
+    }
+   
 
 
 </script>
